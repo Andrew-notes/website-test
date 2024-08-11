@@ -2,10 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Andrew">
+    <meta name="keywords" content="Роджер Дікінсю, Дюна">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my website</title>
-    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        background-color: #96D4D4;
+        padding: 10px;
+        }
+</style>
+
 </head>
 <body>
+<div>
 <h1 style="background-color:powderblue; text-align:center;"> Роджер Дікінс </h1>
 <pre style="font-family:verdana;">
     <b>Сер Роджер Александер Дікінс </b>(англ. Roger Alexander Deakins; нар. 24 травня 1949, Торкі) — англійський кінооператор.
@@ -18,13 +31,62 @@
     <a href="https://uk.wikipedia.org/wiki/%D0%A0%D0%BE%D0%B4%D0%B6%D0%B5%D1%80_%D0%94%D1%96%D0%BA%D1%96%D0%BD%D1%81" target="_blank">Wikipedia</a>
 
 <a href="https://en.wikipedia.org/wiki/Dune_(2021_film)" target="_blank">
-    <img src="https://itc.ua/wp-content/uploads/2024/03/952eeaab1ddc8ffcf7b1983b13665d10_1280x720.jpg", width="700", height="450">
+    <img src="https://itc.ua/wp-content/uploads/2024/03/952eeaab1ddc8ffcf7b1983b13665d10_1280x720.jpg" width="700" height="450" alt="Dune poster">
 </a>
-
-
 </pre>
+</div>
+
+<div>
+<table style="width:50%">
+    <tr>
+        <th>Позиція</th>
+        <th>Фільм</th>
+        <th>Режисер</th>
+    </tr>
+    <tr>
+        <td>32</td>
+        <td>Піаніст</td>
+        <td>Роман Полянський</td>
+    </tr>
+    <tr>
+        <td>33</td>
+        <td>Дюна: Частина друга</td>
+        <td>Дені Вільнев</td>
+    </tr>
+    <tr>
+        <td>34</td>
+        <td>Паразити</td>
+        <td>Пон Чжун Хо</td>
+    </tr>
+</table>
 <!-- This is a comment -->
 <!-- This is a comment -->
+</div>
+
+
+<h3>"Дюна" трейлер</h3>
+
+    <video width="600" controls>
+        <source src="ДЮНА трейлер.mp4" type="video/mp4">
+        <source src="ДЮНА трейлер.ogg" type="video/ogg">
+        Ваш браузер не підтримує відео.
+    </video>
+
+
+<div>
+
+<h1 id="В кінці">Дякую за відвудування цієї веб-сторінки!</h1>
+    <button onclick="displayResult()">Оп!</button>
+</div>
+
+
+<script>
+function displayResult() {
+  document.getElementById("В кінці").innerHTML = "Гарного дня!";
+}
+</script>
+
+
 
 </body>
 </html>
