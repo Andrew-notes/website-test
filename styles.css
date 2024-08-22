@@ -1,0 +1,106 @@
+/* Загальні стилі для всього документа */
+ body {
+       background-image: url('пустеля.jpg');
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center;
+       display: flex;
+       flex-direction: column;
+       min-height: 100vh;
+       margin-bottom: 20px;
+
+ }
+
+.container {
+        display: flex;
+        flex: 1;
+}
+
+.headcontainer {
+        display: grid;
+        place-items: center;
+}
+
+main {
+    flex: 3.5;
+    padding: 20px;
+}
+
+
+/* Стиль для header */
+header {
+        text-align:center;
+        color: hsl(39, 100%, 50%);
+        font-size: 40px;
+        height: 70px;
+        border-radius: 5px;
+}
+
+/* Стиль для заголовка сторінки */
+h1 {
+        text-align:center;
+        color: hsl(39, 100%, 50%);
+        font-size: 15px;
+}
+
+/* Стиль для nav */
+nav {
+        flex: 0.5;
+        color: hsl(39, 100%, 50%);
+        height: 100%;
+        font-size: 20px;
+
+}
+
+
+img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+}
+
+/* Стиль для параграфів */
+
+
+/* Стиль для посилань */
+
+
+/* Стиль для таблиці */
+
+
+
+table, th, td {
+
+        border: 1px solid black;
+        border-collapse: collapse;
+        background-color: rgba(255, 99, 71, 0.8);
+        padding: 10px;
+        text-align:center;
+}
+
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Стиль для кнопки */
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+
+/* Стиль для footer */
+footer {
+        background-color:black;
+        border-radius: 5px;
+}
