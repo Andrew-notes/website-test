@@ -34,6 +34,8 @@ header {
         font-size: 40px;
         height: 70px;
         border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
 }
 
 /* Стиль для заголовка сторінки */
