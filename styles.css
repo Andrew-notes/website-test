@@ -38,6 +38,8 @@ header {
         border-radius: 5px;
         width: 100%;
         box-sizing: border-box;
+        margin: 0;
+        padding: 0;
 }
 
 /* Стиль для заголовка сторінки */
@@ -110,4 +112,8 @@ button:hover {
 footer {
         background-color:black;
         border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
 }
