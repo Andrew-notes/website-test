@@ -1,17 +1,24 @@
 /* Загальні стилі для всього документа */
  body {
-       background-image: url('пустеля.jpg');
+       background: url('пустеля.jpg') no-repeat center;
        background-size: cover;
-       background-repeat: no-repeat;
-       background-position: center;
        display: flex;
        flex-direction: column;
        min-height: 100vh;
        margin-bottom: 20px;
        font-family: Verdana, sans-serif;
        font-size: 15;
+       background-color: rgba(255, 255, 255, 0.2); /* Білий колір з 20% прозорістю */
+       background-blend-mode: overlay;
 
  }
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
 
 .container {
         display: flex;
@@ -27,6 +34,7 @@ main {
     flex: 3.5;
     padding: 20px;
 }
+
 
 
 /* Стиль для header */
@@ -116,4 +124,36 @@ footer {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+}
+
+
+/* Сховати меню за замовчуванням */
+#nav-menu {
+    display: none;
+}
+
+/* Стилі для кнопки "гамбургер" */
+.menu-button {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Відображати кнопку і приховувати меню на мобільних пристроях */
+@media (max-width: 768px) {
+    .menu-button {
+        display: block;
+    }
+
+    #nav-menu.hidden {
+        display: none;
+    }
+
+    #nav-menu.visible {
+        display: block;
+    }
+
+    #main-menu {
+        display: none
+    }
 }

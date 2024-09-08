@@ -5,25 +5,50 @@
     <meta name="author" content="Andrew">
     <meta name="keywords" content="Роджер Дікінс, Дюна, пустеля Дехна">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="google-site-verification" content="nhsTYe_z6-4_FyEMFBiPsmxtUxdewKLyPIpnfswPcMw" />
     <title> пустеля Дехна </title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="headcontainer" style="background-color:black;"> Дюна </header>
+<header class="headcontainer" style="background-color:black;">Дюна
+  <div class="menu-button" style="place-items: center;" onclick="toggleMenu()">&#9776;</div>
 
-    <div class="container">
+  <nav id="nav-menu" class="hidden">
+    <ul>
+      <li><a href="https://andrew-notes.github.io/website-test/" style="color: hsl(39, 100%, 50%)">Головна</a></li>
+      <li><a href="html_1" style="color: hsl(39, 100%, 50%)">Фільми</a></li>
+      <li><a href="html_2" style="color: hsl(39, 100%, 50%)">Книги</a></li>
+      <li><a href="html_3" style="color: hsl(39, 100%, 50%)">Інше</a></li>
+    </ul>
+  </nav>
+</header>
 
-        <nav>
-            <ul>
-                <li><a href="https://andrew-notes.github.io/website-test/" style="color: hsl(39, 100%, 50%)">Головна</a></li>
-                <li><a href="html_1" style="color: hsl(39, 100%, 50%)">Фільми</a></li>
-                <li><a href="html_2" style="color: hsl(39, 100%, 50%)">Книги</a></li>
-                <li><a href="html_3" style="color: hsl(39, 100%, 50%)">Інше</a></li>
-            </ul>
-        </nav>
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById('nav-menu');
+        if (menu.classList.contains('hidden')) {
+            menu.classList.remove('hidden');
+            menu.classList.add('visible');
+        } else {
+            menu.classList.remove('visible');
+            menu.classList.add('hidden');
+        }
+    }
+</script>
 
+<div class="container">
+<div id="main-menu">
+<nav>
+    <ul>
+      <li><a href="https://andrew-notes.github.io/website-test/" style="color: hsl(39, 100%, 50%)">Головна</a></li>
+      <li><a href="html_1" style="color: hsl(39, 100%, 50%)">Фільми</a></li>
+      <li><a href="html_2" style="color: hsl(39, 100%, 50%)">Книги</a></li>
+      <li><a href="html_3" style="color: hsl(39, 100%, 50%)">Інше</a></li>
+    </ul>
+  </nav>
+</div>
     <main>
         <article>
             <p><b>«Дюна»</b> (англ. Dune) — американський науково-фантастичний фільм Дені Вільнева за сценарієм, написаним ним же разом із Еріком Ротом та Джоном Спайтсом.</p>
