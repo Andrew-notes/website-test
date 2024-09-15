@@ -9,21 +9,47 @@
 
 </head>
 <body>
-<header class="headcontainer" style="background-color:black;"> Фільми </header>
+<header class="headcontainer" style="background-color:black;"> Фільми
+  <div class="menu-button" style="place-items: center;" onclick="toggleMenu()">&#9776;</div>
+
+  <nav id="nav-menu" class="hidden" style="background-color: LightGray; width: 100%; text-align:center;">
+    <ul>
+      <li><a href="https://andrew-notes.github.io/website-test/" style="color: hsl(39, 100%, 50%)">Головна</a></li>
+      <li><a href="html_1" style="color: hsl(39, 100%, 50%)">Фільми</a></li>
+      <li><a href="html_2" style="color: hsl(39, 100%, 50%)">Книги</a></li>
+      <li><a href="html_3" style="color: hsl(39, 100%, 50%)">Інше</a></li>
+    </ul>
+  </nav>
+</header>
+
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById('nav-menu');
+        if (menu.classList.contains('hidden')) {
+            menu.classList.remove('hidden');
+            menu.classList.add('visible');
+        } else {
+            menu.classList.remove('visible');
+            menu.classList.add('hidden');
+        }
+    }
+</script>
 
 <div class="container">
-    <nav>
-            <ul>
-                <li><a href="https://andrew-notes.github.io/website-test/" style="color: hsl(39, 100%, 50%)">Головна</a></li>
-                <li><a href="html_1" style="color: hsl(39, 100%, 50%)">Фільми</a></li>
-                <li><a href="html_2" style="color: hsl(39, 100%, 50%)">Книги</a></li>
-                <li><a href="html_3" style="color: hsl(39, 100%, 50%)">Інше</a></li>
-            </ul>
-    </nav>
+<div id="main-menu">
+<nav>
+    <ul>
+      <li><a href="https://andrew-notes.github.io/website-test/" style="color: hsl(39, 100%, 50%)">Головна</a></li>
+      <li><a href="html_1" style="color: hsl(39, 100%, 50%)">Фільми</a></li>
+      <li><a href="html_2" style="color: hsl(39, 100%, 50%)">Книги</a></li>
+      <li><a href="html_3" style="color: hsl(39, 100%, 50%)">Інше</a></li>
+    </ul>
+  </nav>
+</div>
 <main>
     <article>
         <h1 style="text-align: left; font-size: 20px;"> Дюна </h1>
-        <p style="margin-bottom: 20px">
+        <p style="margin-bottom: 20px; text-align: justify; text-indent: 25px; line-height: 1.8;">
             Пустельна планета Арракіс — єдине джерело найважливішої спеції на світі, необхідної для космічних польотів. Великі Будинки галактичної імперії вступають в боротьбу за Арракіс. Початком війни, здатної змінити
             світ, стає указ імператора, який забирає Дюну у барона Харконнена і передає під управління благородного герцога Лето Атріда. У центрі війни виявляється юний Пол — син герцога Лето і леді Джессіки з сестринського
             ордену, що володіє таємним знанням. Після прибуття на Арракіс і знайомства з бунтівним народом фременів Полу належить довести або спростувати чутки про свою роль обраного. Вороги наносять удар першими, але і його
@@ -39,7 +65,7 @@
 
     <article>
         <h1 style="text-align: left; font-size: 20px; "> Дюна: частина друга </h1>
-    <p style="margin-bottom: 20px">
+    <p style="margin-bottom: 20px; text-align: justify; line-height: 1.8;text-indent: 25px;">
 Пол (Тімоті Шаламе) - спадкоємець знаменитого дому Атрідів. Разом зі своєю сім'єю він вирушає в один із найнебезпечніших куточків Всесвіту - на планету Арракіс. Більше відома як Дюна, планета являє собою безмежну пустелю,
 опалювану сонцем і населену величезними чудовиськами. Єдине надбання Арракіса - це безцінна речовина меланж, яка має неймовірні властивості. Меланж здатний продовжити життя і розкрити дрімаючий потенціал людського мозку.
 Крім того, без меланжу неможливі міжзоряні перельоти. Бажання володіти цим ресурсом стає причиною міжгалактичних конфліктів, через які сім'я Пола опиняється в небезпеці. Ховаючись серед фременів, що живуть у пустелях
@@ -57,8 +83,8 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
 
     <article>
         <h1 style="text-align: left; font-size: 20px;"> Дюна: частина третя </h1>
-        <p style="margin-bottom: 20px">
-            майбутній американський науково-фантастичний фільм режисера Дені Вільнева, продовження кінокартини «Дюна: Частина друга» (2024), частина франшизи, основою якої стали романи Френка Герберта. Про роботу над фільмом
+        <p style="margin-bottom: 20px; text-align: justify; line-height: 1.8;text-indent: 25px;">
+            Mайбутній американський науково-фантастичний фільм режисера Дені Вільнева, продовження кінокартини «Дюна: Частина друга» (2024), частина франшизи, основою якої стали романи Френка Герберта. Про роботу над фільмом
             стало відомо у 2023 році. Третій фільм серії «Дюна» заснований на наступному романі Френка Герберта «Месія Дюни». Дія відбувається через 12 років після того, як Пол Атрід зайняв престол імператора.
 
         </p>

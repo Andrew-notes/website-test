@@ -6,7 +6,7 @@
        flex-direction: column;
        min-height: 100vh;
        margin-bottom: 20px;
-       font-family: Verdana, sans-serif;
+       font-family: Verdana, Arial, sans-serif;
        font-size: 15;
        background-color: rgba(255, 255, 255, 0.2); /* Білий колір з 20% прозорістю */
        background-blend-mode: overlay;
@@ -121,15 +121,24 @@ footer {
         background-color:black;
         border-radius: 5px;
         width: 100%;
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
 }
 
 
-/* Сховати меню за замовчуванням */
+/* Сховати меню за замовчуванням  */
 #nav-menu {
     display: none;
+    background-color: LightGray;
+
+    width: 100%;
+    z-index: 10;
+    height: 150px;
+}
+
+#nav-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
 }
 
 /* Стилі для кнопки "гамбургер" */
@@ -156,4 +165,60 @@ footer {
     #main-menu {
         display: none
     }
+
+    header {
+        height: 90px;
+    }
 }
+
+
+/* #nav-menu {
+    position: absolute;
+    top: 90px;  Меню починається після хедера
+    left: 0;
+    width: 100%;
+    z-index: 10; Щоб кнопки меню були поверх контенту
+    background-color: LightGray;
+    text-align: center;
+}
+
+ Вирівнюємо кнопки по центру
+#nav-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#nav-menu ul li {
+    padding: 10px;
+}
+
+#nav-menu ul li a {
+    display: block;
+    padding: 10px;
+    color: hsl(39, 100%, 50%);
+    text-decoration: none;
+}
+
+ Центруємо кнопки в мобільній версії
+@media (max-width: 768px) {
+    #nav-menu ul li {
+        display: block;
+    }
+}
+
+#nav-menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-button {
+    font-size: 40px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+ */

@@ -9,17 +9,43 @@
 </head>
 <body>
 
-<header class="headcontainer" style="background-color:black;"> Інше </header>
+<header class="headcontainer" style="background-color:black;"> Інше
+  <div class="menu-button" style="place-items: center;" onclick="toggleMenu()">&#9776;</div>
+
+  <nav id="nav-menu" class="hidden" style="background-color: LightGray; width: 100%; text-align:center;">
+    <ul>
+      <li><a href="https://andrew-notes.github.io/website-test/" style="color: hsl(39, 100%, 50%)">Головна</a></li>
+      <li><a href="html_1" style="color: hsl(39, 100%, 50%)">Фільми</a></li>
+      <li><a href="html_2" style="color: hsl(39, 100%, 50%)">Книги</a></li>
+      <li><a href="html_3" style="color: hsl(39, 100%, 50%)">Інше</a></li>
+    </ul>
+  </nav>
+</header>
+
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById('nav-menu');
+        if (menu.classList.contains('hidden')) {
+            menu.classList.remove('hidden');
+            menu.classList.add('visible');
+        } else {
+            menu.classList.remove('visible');
+            menu.classList.add('hidden');
+        }
+    }
+</script>
 
 <div class="container">
-    <nav>
-            <ul>
-                <li><a href="https://andrew-notes.github.io/website-test/" style="color: hsl(39, 100%, 50%)">Головна</a></li>
-                <li><a href="html_1" style="color: hsl(39, 100%, 50%)">Фільми</a></li>
-                <li><a href="html_2" style="color: hsl(39, 100%, 50%)">Книги</a></li>
-                <li><a href="html_3" style="color: hsl(39, 100%, 50%)">Інше</a></li>
-            </ul>
-    </nav>
+<div id="main-menu">
+<nav>
+    <ul>
+      <li><a href="https://andrew-notes.github.io/website-test/" style="color: hsl(39, 100%, 50%)">Головна</a></li>
+      <li><a href="html_1" style="color: hsl(39, 100%, 50%)">Фільми</a></li>
+      <li><a href="html_2" style="color: hsl(39, 100%, 50%)">Книги</a></li>
+      <li><a href="html_3" style="color: hsl(39, 100%, 50%)">Інше</a></li>
+    </ul>
+  </nav>
+</div>
 </div>
 
 <!-- https://www.youtube.com/watch?v=uTmBeR32GRA
