@@ -6,50 +6,64 @@
     <title>пустеля Дехна</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://kit.fontawesome.com/c91bbfb33e.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<header class="headcontainer" style="background-color:black;"> Інше
-  <div class="menu-button" style="place-items: center;" onclick="toggleMenu()">&#9776;</div>
+<header class="headcontainer" style="background-color:black; margin-bottom:0;">
 
-  <nav id="nav-menu" class="hidden" style="background-color: LightGray; width: 100%; text-align:center;">
-    <ul>
+<div id="main-menu-1" style="flex: 0 0 20%; background-color: hsl(27, 100%, 50%);  border-top-right-radius: 5px; border-bottom-right-radius: 5px; "> <p style="font-size: 20px; margin-left: 20px; "> пустеля Дехна </p></div>
+
+<div id="main-menu-2" style="flex: 0 0 60%;">
+<nav class="nav-first">
+    <ul style="align-items: center; justify-content: center; place-items: center;">
       <li><a href="https://andrew-notes.github.io/website-test/" style="color: hsl(39, 100%, 50%)">Головна</a></li>
-      <li><a href="html_1" style="color: hsl(39, 100%, 50%)">Фільми</a></li>
-      <li><a href="html_2" style="color: hsl(39, 100%, 50%)">Книги</a></li>
-      <li><a href="html_3" style="color: hsl(39, 100%, 50%)">Інше</a></li>
+      <li><a href="html_1.html" style="color: hsl(39, 100%, 50%)">Фільми</a></li>
+      <li><a href="html_2.html" style="color: hsl(39, 100%, 50%)">Книги</a></li>
+      <li><a href="html_3.html" style="color: hsl(39, 100%, 50%)">Інше</a></li>
     </ul>
-  </nav>
+</nav>
+</div>
+
+<div class="menu-button" style="flex: 0 0 60%;" onclick="toggleMenu()">&#9776;</div>
+
+<div id="main-menu-3" style="flex: 0 0 20%; font-size: 20px; color: hsl(39, 100%, 50%); "> <i style="padding-right: 10px" class="fas fa-search"></i> <i style="padding-right: 10px" class="fas fa-user-alt"></i> </div>
 </header>
 
-<script>
-    function toggleMenu() {
-        var menu = document.getElementById('nav-menu');
-        if (menu.classList.contains('hidden')) {
-            menu.classList.remove('hidden');
-            menu.classList.add('visible');
-        } else {
-            menu.classList.remove('visible');
-            menu.classList.add('hidden');
-        }
-    }
-</script>
-
-<div class="container">
-<div id="main-menu">
-<nav>
-    <ul>
+<nav id="nav-menu" class="hidden" >
+    <ul style="margin-top:50px;">
       <li><a href="https://andrew-notes.github.io/website-test/" style="color: hsl(39, 100%, 50%)">Головна</a></li>
-      <li><a href="html_1" style="color: hsl(39, 100%, 50%)">Фільми</a></li>
-      <li><a href="html_2" style="color: hsl(39, 100%, 50%)">Книги</a></li>
-      <li><a href="html_3" style="color: hsl(39, 100%, 50%)">Інше</a></li>
+      <li><a href="html_1.html" style="color: hsl(39, 100%, 50%)">Фільми</a></li>
+      <li><a href="html_2.html" style="color: hsl(39, 100%, 50%)">Книги</a></li>
+      <li><a href="html_3.html" style="color: hsl(39, 100%, 50%)">Інше</a></li>
     </ul>
-  </nav>
-</div>
+ </nav>
+<div class="container" style="height: 100%;">
+<main style="margin-top: 85px; display:flex; flex-direction: column; align-items: center;">
+
+    <h1> тут щось буде </h1>
+
+</main>
+    <button id="toggle-chat" onclick="displayChat()"> Чат </button>
+
+
+    <div id="chat-container" class="hide-chat">
+        <h2>Чат-бот</h2>
+        <div id="chat"></div>
+        <input style="margin-top: 10px;" type="text" id="userInput" placeholder="Напиши щось...">
+        <button  id="chat-button" onclick="sendMessage()">Надіслати</button>
+    </div>
+            <footer>
+        <h2 style="color: hsl(39, 100%, 50%); margin: 0; padding: 0; text-align: center;" id="В кінці">Дякую за відвудування цієї веб-сторінки!</h2>
+        <div style=" margin: 0; padding: 0;">
+            <button onclick="displayResult()">Тиць!</button>
+        </div>
+    </footer>
 </div>
 
-<!-- https://www.youtube.com/watch?v=uTmBeR32GRA
-гра, настілка-->
+
+
+<script src="scripts.js"></script>
 
 </body>
 </html>

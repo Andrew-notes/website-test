@@ -6,50 +6,45 @@
     <title>пустеля Дехна</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://kit.fontawesome.com/c91bbfb33e.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
-<header class="headcontainer" style="background-color:black;"> Фільми
-  <div class="menu-button" style="place-items: center;" onclick="toggleMenu()">&#9776;</div>
+<header class="headcontainer" style="background-color:black; margin-bottom:0;">
 
-  <nav id="nav-menu" class="hidden" style="background-color: LightGray; width: 100%; text-align:center;">
-    <ul>
+<div id="main-menu-1" style="flex: 0 0 20%; background-color: hsl(27, 100%, 50%);  border-top-right-radius: 5px; border-bottom-right-radius: 5px; "> <p style="font-size: 20px; margin-left: 20px; "> пустеля Дехна </p></div>
+
+<div id="main-menu-2" style="flex: 0 0 60%;">
+<nav class="nav-first">
+    <ul style="align-items: center; justify-content: center; place-items: center;">
       <li><a href="https://andrew-notes.github.io/website-test/" style="color: hsl(39, 100%, 50%)">Головна</a></li>
-      <li><a href="html_1" style="color: hsl(39, 100%, 50%)">Фільми</a></li>
-      <li><a href="html_2" style="color: hsl(39, 100%, 50%)">Книги</a></li>
-      <li><a href="html_3" style="color: hsl(39, 100%, 50%)">Інше</a></li>
+      <li><a href="html_1.html" style="color: hsl(39, 100%, 50%)">Фільми</a></li>
+      <li><a href="html_2.html" style="color: hsl(39, 100%, 50%)">Книги</a></li>
+      <li><a href="html_3.html" style="color: hsl(39, 100%, 50%)">Інше</a></li>
     </ul>
-  </nav>
+</nav>
+</div>
+
+<div class="menu-button" style="flex: 0 0 60%;" onclick="toggleMenu()">&#9776;</div>
+
+<div id="main-menu-3" style="flex: 0 0 20%; font-size: 20px; color: hsl(39, 100%, 50%); "> <i style="padding-right: 10px" class="fas fa-search"></i> <i style="padding-right: 10px" class="fas fa-user-alt"></i> </div>
 </header>
 
-<script>
-    function toggleMenu() {
-        var menu = document.getElementById('nav-menu');
-        if (menu.classList.contains('hidden')) {
-            menu.classList.remove('hidden');
-            menu.classList.add('visible');
-        } else {
-            menu.classList.remove('visible');
-            menu.classList.add('hidden');
-        }
-    }
-</script>
-
-<div class="container">
-<div id="main-menu">
-<nav>
-    <ul>
+<nav id="nav-menu" class="hidden" >
+    <ul style="margin-top:50px;">
       <li><a href="https://andrew-notes.github.io/website-test/" style="color: hsl(39, 100%, 50%)">Головна</a></li>
-      <li><a href="html_1" style="color: hsl(39, 100%, 50%)">Фільми</a></li>
-      <li><a href="html_2" style="color: hsl(39, 100%, 50%)">Книги</a></li>
-      <li><a href="html_3" style="color: hsl(39, 100%, 50%)">Інше</a></li>
+      <li><a href="html_1.html" style="color: hsl(39, 100%, 50%)">Фільми</a></li>
+      <li><a href="html_2.html" style="color: hsl(39, 100%, 50%)">Книги</a></li>
+      <li><a href="html_3.html" style="color: hsl(39, 100%, 50%)">Інше</a></li>
     </ul>
-  </nav>
-</div>
-<main>
-    <article>
-        <h1 style="text-align: left; font-size: 20px;"> Дюна </h1>
-        <p style="margin-bottom: 20px; text-align: justify; text-indent: 25px; line-height: 1.8;">
+ </nav>
+
+<div class="container" style="height: 100%;">
+<main style="margin-top: 85px; display:flex; flex-direction: column; align-items: center;">
+
+    <div style="margin-bottom: 20px;">
+        <h1 style="text-align: center; font-size: 20px;"> Дюна </h1>
+        <p style="text-align: justify; text-indent: 25px; line-height: 1.8;">
             Пустельна планета Арракіс — єдине джерело найважливішої спеції на світі, необхідної для космічних польотів. Великі Будинки галактичної імперії вступають в боротьбу за Арракіс. Початком війни, здатної змінити
             світ, стає указ імператора, який забирає Дюну у барона Харконнена і передає під управління благородного герцога Лето Атріда. У центрі війни виявляється юний Пол — син герцога Лето і леді Джессіки з сестринського
             ордену, що володіє таємним знанням. Після прибуття на Арракіс і знайомства з бунтівним народом фременів Полу належить довести або спростувати чутки про свою роль обраного. Вороги наносять удар першими, але і його
@@ -60,39 +55,79 @@
         src="https://www.youtube.com/embed/Ljzu52GMytk"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         </iframe>
-    </article>
+    </div>
 
 
-    <article>
-        <h1 style="text-align: left; font-size: 20px; "> Дюна: частина друга </h1>
-    <p style="margin-bottom: 20px; text-align: justify; line-height: 1.8;text-indent: 25px;">
+    <div style="margin-bottom: 20px">
+        <h1 style="text-align: center; font-size: 20px; "> Дюна: частина друга </h1>
+    <p style=" text-align: justify; line-height: 1.8;text-indent: 25px; margin-bottom: 0px;">
 Пол (Тімоті Шаламе) - спадкоємець знаменитого дому Атрідів. Разом зі своєю сім'єю він вирушає в один із найнебезпечніших куточків Всесвіту - на планету Арракіс. Більше відома як Дюна, планета являє собою безмежну пустелю,
 опалювану сонцем і населену величезними чудовиськами. Єдине надбання Арракіса - це безцінна речовина меланж, яка має неймовірні властивості. Меланж здатний продовжити життя і розкрити дрімаючий потенціал людського мозку.
 Крім того, без меланжу неможливі міжзоряні перельоти. Бажання володіти цим ресурсом стає причиною міжгалактичних конфліктів, через які сім'я Пола опиняється в небезпеці. Ховаючись серед фременів, що живуть у пустелях
-Арракіса, Пол зустрічає дівчину на ім'я Чані (Зендая), яка знайомить його зі звичаями свого племені. Приєднавшись до фременів, Пол прийняв ім'я Муад'Діб - так народ пустелі називає дрібного гризуна, який вміє виживати
+Арракіса, Пол зустрічає дівчину на ім'я Чані (Зендая), яка знайомить його зі звичаями свого племені.</p>
+
+<p style="text-indent: 25px; text-align: justify; line-height: 1.8;">Приєднавшись до фременів, Пол прийняв ім'я Муад'Діб - так народ пустелі називає дрібного гризуна, який вміє виживати
 в пісках. Вшанований фременами за месію (Махді), Пол підніме їх на боротьбу з домом Харконненів, представники якого за потурання імператора Шаддама IV захопили владу на Арракісі й фактично винищили Атрідів. Отримавши
 владу над Дюною, Пол одружиться з Ірулан, донькою Шаддама IV, і таким чином стане імператором. На той час поклонятися Полу як месії і надлюдині (Квізац Хардеачу) почнуть не тільки фремени, а й цивілізовані жителі імперії,
 зокрема й очільник збройних сил Атрідів Гарні Галлек (Джош Бролін), який знав його з дитинства.
-    </p>
+</p>
 
 <iframe width="480" height="315"
 src="https://www.youtube.com/embed/DtR76pz517E"
 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
-    </article>
+    </div>
 
-    <article>
-        <h1 style="text-align: left; font-size: 20px;"> Дюна: частина третя </h1>
+    <div style="margin-bottom: 20px">
+        <h1 style="text-align: center; font-size: 20px;"> Дюна: частина третя </h1>
         <p style="margin-bottom: 20px; text-align: justify; line-height: 1.8;text-indent: 25px;">
             Mайбутній американський науково-фантастичний фільм режисера Дені Вільнева, продовження кінокартини «Дюна: Частина друга» (2024), частина франшизи, основою якої стали романи Френка Герберта. Про роботу над фільмом
-            стало відомо у 2023 році. Третій фільм серії «Дюна» заснований на наступному романі Френка Герберта «Месія Дюни». Дія відбувається через 12 років після того, як Пол Атрід зайняв престол імператора.
+            стало відомо у 2023 році. Третій фільм серії «Дюна» заснований на наступному романі Френка Герберта «Месія Дюни». Дія відбувається через 12 років після того, як Пол Атрід зайняв престол імператора. Дата виходу
+            невідома.
 
         </p>
-    </article>
+    </div>
+
+    <div style="margin-bottom: 100px">
+        <h1 style="text-align: center; font-size: 20px;"> Дюна: Пророцтво </h1>
+        <p style="margin-bottom: 20px; text-align: justify; line-height: 1.8;text-indent: 25px;">
+            Американський науково-фантастичний серіал розроблений Діаною Адему-Джон та Елісон Шапкер для каналу HBO. Приквел до подій, описаних у фільмах Дені Вільнева, що відбувається за 10 000 років до основних подій всесвіту Дюни.
+            Серіал досліджує походження Бене Гессеріт — могутньої сестринської організації, що відіграє ключову роль у всесвіті Дюни.
+        </p>
+
+        <p style="margin-bottom: 20px; text-align: justify; line-height: 1.8;text-indent: 25px;">
+            Сюжет зосереджений на Вальї Харконнен і її сестрі, членах дому Харконненів. Вони маневрують у складному політичному ландшафті, наповненому інтригами та конфліктами, намагаючись протистояти силам, що загрожують майбутньому людства.
+            Їхня подорож стає вирішальною для формування сестринства Бене Гессеріт, яке згодом вплине на хід історії.
+        </p>
+
+        <iframe width="480" height="315"
+        src="https://www.youtube.com/embed/oiOQyruprvM"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </div>
+
 
 </main>
+
+    <button id="toggle-chat" onclick="displayChat()"> Чат </button>
+
+
+    <div id="chat-container" class="hide-chat">
+        <h2>Чат-бот</h2>
+        <div id="chat"></div>
+        <input style="margin-top: 10px;" type="text" id="userInput" placeholder="Напиши щось...">
+        <button  id="chat-button" onclick="sendMessage()">Надіслати</button>
+    </div>
+        <footer>
+        <h2 style="color: hsl(39, 100%, 50%); margin: 0; padding: 0; text-align: center;" id="В кінці">Дякую за відвудування цієї веб-сторінки!</h2>
+        <div style=" margin: 0; padding: 0;">
+            <button onclick="displayResult()">Тиць!</button>
+        </div>
+    </footer>
 </div>
 
+
+<script src="scripts.js"></script>
 
 
 

@@ -2,52 +2,62 @@
  body {
        background: url('пустеля.jpg') no-repeat center;
        background-size: cover;
-       display: flex;
-       flex-direction: column;
-       min-height: 100vh;
-       margin-bottom: 20px;
+       background-attachment: fixed;
+       height: 100vh;
+
        font-family: Verdana, Arial, sans-serif;
-       font-size: 15;
        background-color: rgba(255, 255, 255, 0.2); /* Білий колір з 20% прозорістю */
        background-blend-mode: overlay;
 
  }
 
+
+html, body {
+       height: 100%;
+}
+
 * {
-    box-sizing: border-box;
     max-width: 100%;
     overflow-wrap: break-word;
+    margin: 0; /* CSS Reset */
+    padding: 0;
+    box-sizing: border-box;
+
 }
 
 
 .container {
         display: flex;
         flex: 1;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+        min-height: 100vh;
+
 }
 
 .headcontainer {
-        display: grid;
+        display: flex;
         place-items: center;
-}
-
-main {
-    flex: 3.5;
-    padding: 20px;
-}
-
-
-
-/* Стиль для header */
-header {
-        text-align:center;
-        color: hsl(39, 100%, 50%);
-        font-size: 40px;
-        height: 70px;
-        border-radius: 5px;
-        width: 100%;
-        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
         margin: 0;
         padding: 0;
+        width: 100%;
+        margin-bottom: 20px;
+        height: 65px;
+
+}
+
+
+
+main * {
+  margin-bottom: 20px;
 }
 
 /* Стиль для заголовка сторінки */
@@ -59,29 +69,52 @@ h1 {
 
 /* Стиль для nav */
 nav {
-        flex: 0.5;
         color: hsl(39, 100%, 50%);
         height: 100%;
         font-size: 20px;
 
 }
 
+/* Стиль для nav ПК версія */
+.nav-first ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Встановлює горизонтальне розташування елементів */
+    gap: 60px; /* Відступи між пунктами меню */
+}
+
+.nav-first ul li {
+    display: inline-block; /* Встановлює горизонтальне відображення пунктів */
+}
+
+.nav-first ul li a {
+    text-decoration: none;
+    color: hsl(39, 100%, 50%);
+    font-size: 30px;
+}
+
+/* Зміна кольору при наведенні, якщо посилання не активне */
+.nav-first ul li a:hover:not(.active) {
+  background-color: rgba(255, 99, 71, 0.8);
+}
+
+/* Виділення активного пункту меню */
+.nav-first ul li a.active {
+  background-color: rgba(255, 99, 71, 0.5);
+}
+
+/* Стиль для nav ПК версія */
+
+
 
 img {
         margin-top: 20px;
         margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+
 }
-
-
-
-
-/* Стиль для параграфів */
-
-
-/* Стиль для посилань */
-
-
-/* Стиль для таблиці */
 
 
 
@@ -94,14 +127,26 @@ table, th, td {
         text-align:center;
 }
 
-
+tr:hover {background-color: rgba(40, 79, 51, 1);}
 
 a:hover {
     text-decoration: underline;
 }
 
+/* Стиль для footer */
+footer {
+        display: flex;
+        background-color:black;
+        margin-top: auto;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 100px;
 
-/* Стиль для кнопки */
+}
+
+/* Стиль для кнопки в footer*/
 button {
     background-color: #28a745;
     color: white;
@@ -109,6 +154,9 @@ button {
     padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
+    box-sizing: border-box;
+    margin: 0;
+
 }
 
 button:hover {
@@ -116,29 +164,25 @@ button:hover {
 }
 
 
-/* Стиль для footer */
-footer {
-        background-color:black;
-        border-radius: 5px;
-        width: 100%;
-}
-
-
 /* Сховати меню за замовчуванням  */
 #nav-menu {
     display: none;
     background-color: LightGray;
-
     width: 100%;
     z-index: 10;
-    height: 150px;
+    height: 200px;
+
+
 }
+
+
 
 #nav-menu ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0;
+
 }
 
 /* Стилі для кнопки "гамбургер" */
@@ -146,9 +190,47 @@ footer {
     font-size: 30px;
     cursor: pointer;
     display: none;
+    text-align: right;
+    color: hsl(39, 100%, 50%);
+    padding-right: 10px;
+
 }
 
-/* Відображати кнопку і приховувати меню на мобільних пристроях */
+
+/* Стилі для чат-бота */
+#toggle-chat {
+    position: fixed;
+    bottom: 120px;
+    right: 50px;
+    border-radius: 10px;
+}
+
+/* Стилі для чат-бота */
+#chat { border: 1px solid #ddd; padding: 10px; height: 200px; overflow-y: auto; width: 240px;}
+#userInput { padding: 10px; width: 80%; margin-bottom: 10px;}
+#chat-button { padding: 10px; width: 80%; margin-bottom: 10px;}
+
+/* Стилі для чат-контейнера */
+#chat-container {
+    display: none;
+
+}
+
+#chat-container.show {
+    display:flex;
+    border: 1px solid #ddd;
+    background-color:white;
+    border-radius: 10px;
+    width: 300px;
+
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    bottom: 170px;
+    right: 50px;
+}
+
+/* Відображати кнопку і приховувати меню на мобільних пристроях 918 */
 @media (max-width: 768px) {
     .menu-button {
         display: block;
@@ -156,13 +238,18 @@ footer {
 
     #nav-menu.hidden {
         display: none;
+
     }
 
     #nav-menu.visible {
-        display: block;
+        display: flex;
+            justify-content: center;
+            align-items: center;
+
+
     }
 
-    #main-menu {
+    #main-menu-2  {
         display: none
     }
 
@@ -171,54 +258,3 @@ footer {
     }
 }
 
-
-/* #nav-menu {
-    position: absolute;
-    top: 90px;  Меню починається після хедера
-    left: 0;
-    width: 100%;
-    z-index: 10; Щоб кнопки меню були поверх контенту
-    background-color: LightGray;
-    text-align: center;
-}
-
- Вирівнюємо кнопки по центру
-#nav-menu ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#nav-menu ul li {
-    padding: 10px;
-}
-
-#nav-menu ul li a {
-    display: block;
-    padding: 10px;
-    color: hsl(39, 100%, 50%);
-    text-decoration: none;
-}
-
- Центруємо кнопки в мобільній версії
-@media (max-width: 768px) {
-    #nav-menu ul li {
-        display: block;
-    }
-}
-
-#nav-menu ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu-button {
-    font-size: 40px;
-    padding: 10px;
-    background-color: black;
-    color: white;
-    border: none;
-}
-
- */
