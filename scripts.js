@@ -11,7 +11,7 @@ menu.classList.add('hidden');
 }
 
 //images
-const images = ["3/Pictures/1.jpg", "3/Pictures/2.jpg", "3/Pictures/3.jpg"];
+const images = ["Pictures/1.jpg", "Pictures/2.jpg", "Pictures/3.jpg"];
 let currentIndex = 0;
 
 // left-button
